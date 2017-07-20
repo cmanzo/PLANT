@@ -1,0 +1,4 @@
+*.txt
+!example_trace.txt
+*.m~
+
