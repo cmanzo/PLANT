@@ -265,7 +265,13 @@ AA=Segm_alg(XY,n0,prob,sigP1,1);
 
 alldata=handles.AA;
 guidata(hObject,handles);
-dlmwrite('segmentedata.txt',alldata,'delimiter','\t')
+dlmwrite('reconstructed_trace.txt',alldata,'delimiter','\t')
+% XY of reconstructed trace
+dlmwrite('reconstructed_data.txt',AA,'delimiter','\t')
+%The first two columns contain the coordinates(X,Y) of the change points 
+%(here X must be understood as the temporal coordinate). 
+%The rest of columns include the properties of each of the segments found,i.e., 
+%time duration (third column), slope (fourth column) and offset (fifth column).
 
 
 
@@ -513,10 +519,12 @@ else
        
 end
 
-Asim=generate_trace(dt1,Ntot1,sigsim1,vmin1,vmax1,tau1);
+[Asim,Adat]=generate_trace(dt1,Ntot1,sigsim1,vmin1,vmax1,tau1);
 handles.Asim1=Asim;
 
-dlmwrite('simtrace.txt',Asim,'delimiter','\t')
+dlmwrite('sim_trace.txt',Asim,'delimiter','\t')
+dlmwrite('sim_data.txt',Adat,'delimiter','\t')
+
 handles.simind=1;
 guidata(hObject,handles);
 
@@ -551,4 +559,4 @@ function pushbutton16_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
- msgbox('PLANT. SOFTWARE VERSION 1.1. A.Sosa-Costa & C. Manzo, Dec. 2016' )
+ msgbox('PLANT. SOFTWARE VERSION 1.2. A.Sosa-Costa & C. Manzo, March. 2017' )

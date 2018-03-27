@@ -195,7 +195,7 @@ Mslope=[slope,NaN];
 deltat=[deltat,NaN];
 Moffset=[offset,NaN]; 
     
- AA=[xpf ypf deltat' Mslope' Moffset'];
+AA=[xpf ypf deltat' Mslope' Moffset'];
 
  close(h3)
 
