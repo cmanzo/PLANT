@@ -1,4 +1,4 @@
-###Authors
+### Authors
 Both the code and the Matlab GUI were developed by A. Sosa-Costa (albesosa) and C. Manzo (cmanzo) in 2016 (last modification March 2017) as part of a research project started at ICFO - The Institute of Photonic Sciences (Spain)
 
 # PLANT
