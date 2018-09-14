@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Reference
 In order to help us ensure financial support for our research, please cite the publication below in all your documents and manuscripts that made use of the software included in this repository. 
 
-> ### A DNA origami platform for quantifying protein copy number in super-resolution
+> ### PLANT: A Method for Detecting Changes of Slope in Noisy Trajectories
 > #### Sosa-Costa, A., Piechocka, I.K. and Gardini, L., Pavone, F. S., Capitanio, M.. Garcia-Parajo, M. F.. Manzo, C.
 > #### *Biophysical Journal* 2018, *114*(9):2044-2051
 > #### doi: 10.1016/j.bpj.2018.04.006
