@@ -1,8 +1,31 @@
 ### Authors
-Both the code and the Matlab GUI were developed by A. Sosa-Costa (albesosa) and C. Manzo (cmanzo) in 2016 (last modification March 2017) as part of a research project started at ICFO - The Institute of Photonic Sciences (Spain)
+Both the code and the Matlab GUI were developed by A. Sosa-Costa (albesosa) and C. Manzo (cmanzo) in 2016 (last modification March 2018) as part of a research project started at ICFO - The Institute of Photonic Sciences (Spain)
 
 # PLANT
 Matlab GUI to reconstruct noisy trajectory composed by consecutive linear regions of various duration and slope and constant noise. The algorithm is composed by two main sequential blocks: the first (WINLINFIT) recursively selects a set of candidate change points associated to a potential variation in the slope by means of least square fitting and likelihood evaluation; the second (MERGING) refines the number of change points by hierarchically executing a hypothesis test on adjacent segments.  The code requires an estimation of the noise standard deviation that can be obtained from calibration measurements, or be estimated directly from the trace under analysis, as described below. 
+
+## Reference
+Please cite the publication below in all your documents and manuscripts that made use of the software included in this repository. 
+
+> ### A DNA origami platform for quantifying protein copy number in super-resolution
+> #### Sosa-Costa, A., Piechocka, I.K. and Gardini, L., Pavone, F. S., Capitanio, M.. Garcia-Parajo, M. F.. Manzo, C.
+> #### *Biophysical Journal* 2018, *114*(9):2044-2051
+> #### doi: 10.1016/j.bpj.2018.04.006
+
+#### *BibTeX*
+```
+@article{sosa2018bj,
+  title={PLANT: A Method for Detecting Changes of Slope in Noisy Trajectories},
+  author={Sosa-Costa, Alberto and Piechocka, Izabela~K and Gardini, Lucia and Pavone, Francesco S and Capitanio, Marco and Garcia-Parajo, Maria~F and Manzo, Carlo},
+  journal={Biophysical journal},
+  volume={114},
+  number={9},
+  pages={2044--2051},
+  year={2018},
+  doi={10.1016/j.bpj.2018.04.006},
+  publisher={Elsevier}
+}
+```
 
 ## Getting Started
 These instructions will allow you to run the code on experimental data, or to generate a simulated dataset and then analyze it.
